@@ -21,6 +21,8 @@ const reviewsRoutes = require('./routes/reviews.js');
 const MongoDBStore = require("connect-mongo")(session);
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 
+// console.log(`***** MAPBOX_TOKEN value set to: ${process.env.MAPBOX_TOKEN}`);
+
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     // useCreateIndex: true,
